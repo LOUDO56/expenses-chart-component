@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Space+Grotesk:wght@500&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+:root{
+    --soft-red: hsl(10, 79%, 65%);
+    --cyan: hsl(186, 34%, 60%);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    background-color: hsl(27, 66%, 92%);
+    width: 100%;
+    min-height: 100vh;
+}
+
+main{
+    width: 25em;
+    padding: 15px;
+}
+
+
+/* BALANCE */
+
+.balance{
+    background-color: var(--soft-red);
+    padding: 25px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    color: white;
+
+}
+
+.balance-information{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.balance:first-child{
+    font-size: 14px;
+}
+
+.balance-amount{
+    font-weight: 700;
+    font-size: 23px;
+    letter-spacing: 1px;
+}
+
+.balance-decoration{
+    display: flex;
+    position: relative;
+}
+
+.circle-1{
+    display: block;
+    position: absolute;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 100%;
+}
+
+.circle-2{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: hsl(25, 47%, 15%);
+    border-radius: 100%;
+}
+
+
+/* SPENDING */
+
+.spending{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 15px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.title-spend{
+    font-size: 26px;
+}
+
+.graphic-list{
+    height: 140px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.graphics{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    
+}
+
+.graphic{
+    position: relative;
+    flex: 1;
+    background-color: var(--soft-red);
+    border-radius: 4px;
+    margin: 0 7px;
+    transition: 0.15s;
+
+}
+
+.days{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+
+.day{
+    flex: 1;
+    font-size: 13px;
+    text-align: center;
+    color: hsl(28, 10%, 53%);
+}
+
+.amount-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -35px;
+    left: -7px;
+    width: 55px;
+    height: 30px;
+    background-color: hsl(25, 47%, 15%);
+    border-radius: 3px;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+
+}
+
+.graphic:hover{
+    cursor: pointer;
+    background-color: hsl(10, 80%, 83%);
+}
+
+.graphic:hover .amount-info{
+    background-color: rgb(56, 35, 20);
+}
+
+.today{
+    background-color: var(--cyan);
+}
+
+.today:hover{
+    background-color: hsl(187, 35%, 80%);
+}
+
+
+
+
+/* TOTAL */
+
+hr{
+
+    color: hsl(33, 100%, 98%);
+}
+
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.total p{
+    font-size: 14px;
+    color: hsl(28, 10%, 53%);
+}
+
+.total h2{
+    font-size: 35px;
+}
+
+.per-last-month{
+    color: black !important;
+    font-weight: 700;
+}
+
+.total-last-month{
+    text-align: right;
+    margin-top: 25px;
+}
+
+
+@media screen and (max-width: 375px) {
+    .balance, .spending{
+        border-radius: 10px;
+    }
+
+    .graphic{
+        border-radius: 3px;
+        margin: 0 5px;
+    }
+}

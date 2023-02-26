@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="script.js" defer></script>
+  <title>Frontend Mentor | Expenses chart component</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+    <main>
+      <div class="balance">
+        <div class="balance-information">
+          <p>My balance</p>
+          <p class="balance-amount">$921.48</p>
+        </div>
+        <div class="balance-decoration">
+          <span class="circle-1"></span>
+          <span class="circle-2"></span>
+        </div>
+      </div>
+      <div class="spending">
+        <h2 class="title-spend">Spending - Last 7 says</h2>
+        <div class="graphic-list">
+          <div class="graphics" id="graphics">
+          </div>
+          <div class="days">
+            <span class="day">mon</span>
+            <span class="day">tue</span>
+            <span class="day">wed</span>
+            <span class="day">thu</span>
+            <span class="day">fri</span>
+            <span class="day">sat</span>
+            <span class="day">sun</span>
+          </div>
+        </div>
+        <hr>
+        <div class="total">
+          <div class="total-this-month">
+            <p class="total-amount">Total this month</p>
+            <h2>$478.33</h2>
+          </div>
+          <div class="total-last-month">
+            <p class="per-last-month">+2.4%</p>
+            <p>from last month</p>
+          </div>
+        </div>
+    </main>
+  </body> 
+
+</html>
