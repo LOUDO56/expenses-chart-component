@@ -7,7 +7,7 @@ fetch('data.json')
             day = 6;
         }
         for(let i = 0; i < 7; i++){
-            let span = graphics.appendChild(document.createElement("span"));
+            let span = graphics.appendChild(document.createElement("div"));
             span.classList.add("graphic");
             span.classList.add(data[i].day);
             let amount_info = span.appendChild(document.createElement("div"));
